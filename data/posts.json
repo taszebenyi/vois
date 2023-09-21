@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Joe Jackson Is Back in the Game",
+    "headline": "Driver returns to rally",
+    "body": "Joe Jackson is back in the rally game. Duis nunc velit, pellentesque sit amet fringilla a, mollis sed mi. Vivamus cursus aliquet tortor.",
+    "created_at": "2023-09-10",
+    "tags": ["rally", "cars"]
+  },
+  {
+    "id": 2,
+    "title": "Stratocaster",
+    "headline": "I like my guitar",
+    "body": "I love my guitar. Let me tell you about it. Donec efficitur interdum massa non fermentum. Aliquam vel ex libero. Nunc in imperdiet tortor. Integer.",
+    "created_at": "2023-08-23",
+    "tags": ["music", "guitar"]
+  },
+  {
+    "id": 3,
+    "title": "I Bought a New Car",
+    "headline": "You will never guess the model",
+    "body": "Cars go 'wroom wroom'. This is the main reason I like them. Pellentesque tellus leo, porttitor eget ullamcorper vitae, imperdiet pretium neque. Cras tempus nulla sit amet.",
+    "created_at": "2023-08-16",
+    "tags": ["cars", "engines"]
+  },
+  {
+    "id": 4,
+    "title": "My Scary Day",
+    "headline": "I had to go back to the dentist",
+    "body": "It turns I had to go back to my dentist. In vel mattis lorem, non ultrices nisl. Integer dignissim mattis varius. Donec aliquet metus eget.",
+    "created_at": "2023-09-11",
+    "tags": ["dentistry", "teeth"]
+  },
+  {
+    "id": 5,
+    "title": "Drumkit",
+    "headline": "Today my daughter got her first drumkit",
+    "body": "I just bought a drumkit for my daughter. Sed ac metus sed turpis blandit cursus id vel elit. Nunc vehicula ultrices feugiat. Sed.",
+    "created_at": "2023-09-19",
+    "tags": ["music", "drums"]
+  }
+]

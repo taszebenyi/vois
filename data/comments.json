@@ -1,0 +1,40 @@
+[
+  {
+    "post_id": 1,
+    "comments": [
+      { "id": 1, "text": "Great to see Joe back in action!", "author": "Mike" },
+      { "id": 2, "text": "Rally has missed him.", "author": "Sarah" },
+      { "id": 3, "text": "Is he competing next month?", "author": "Lucy" }
+    ]
+  },
+  {
+    "post_id": 2,
+    "comments": [
+      { "id": 1, "text": "Strats are the best!", "author": "Dave" },
+      { "id": 2, "text": "What model is it?", "author": "Steve" }
+    ]
+  },
+  {
+    "post_id": 3,
+    "comments": [
+      { "id": 1, "text": "Wroom wroom! Nice ride!", "author": "Jen" },
+      { "id": 2, "text": "What's the make?", "author": "Tom" },
+      { "id": 3, "text": "Gas or electric?", "author": "Alan" }
+    ]
+  },
+  {
+    "post_id": 4,
+    "comments": [
+      { "id": 1, "text": "Dentists are always scary!", "author": "Karen" },
+      { "id": 2, "text": "Hope it went well.", "author": "Sam" }
+    ]
+  },
+  {
+    "post_id": 5,
+    "comments": [
+      { "id": 1, "text": "Drums? Brave choice, parent!", "author": "Tina" },
+      { "id": 2, "text": "She'll love it!", "author": "Paul" },
+      { "id": 3, "text": "Time for earplugs?", "author": "Janet" }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+/* Basic styles */
+body {
+  font-family: Helvetica;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
