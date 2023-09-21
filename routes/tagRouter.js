@@ -9,6 +9,7 @@ const tagRouter = express.Router();
  * /api/tags/{name}:
  *   get:
  *     summary: Retrieve posts by tag name
+ *     tags: [Tags]
  *     parameters:
  *       - name: name
  *         in: path

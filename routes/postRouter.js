@@ -33,6 +33,7 @@ postRouter.get('/', async (req, res) => {
  * /api/posts/{id}:
  *   get:
  *     summary: Retrieve a post by ID
+ *     tags: [Posts]
  *     parameters:
  *       - name: id
  *         in: path
@@ -58,6 +59,7 @@ postRouter.get('/:id', async (req, res) => {
  * /api/posts/{id}/comments:
  *   get:
  *     summary: Retrieve comments for a post by post ID
+ *     tags: [Posts]
  *     parameters:
  *       - name: id
  *         in: path
@@ -81,6 +83,7 @@ postRouter.get('/:id/comments', async (req, res) => {
  * /api/posts/tags/{tag}:
  *   get:
  *     summary: Retrieve posts by tag
+ *     tags: [Posts]
  *     parameters:
  *       - name: tag
  *         in: path
