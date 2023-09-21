@@ -3,3 +3,4 @@ package-lock.json
 commitlint.config.js
 .eslintrc
 .prettierrc
+.env
