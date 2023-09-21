@@ -1,11 +1,12 @@
-import winston from 'winston';
+import { createLogger, format, transports } from 'winston';
+const { combine, timestamp, printf, colorize } = format;
 
-const env = process.env.NODE_ENV || 'development';
-
-const logger = winston.createLogger({
-  level: env === 'development' ? 'debug' : 'info',
-  format: winston.format.simple(),
-  transports: [new winston.transports.Console()],
+const myFormat = printf(({ timestamp, level, message }) => {
+  return `${timestamp} [${level}] ${message}`;
 });
 
+const logger = createLogger({
+  format: combine(colorize(), timestamp(), myFormat),
+  transports: [new transports.Console()],
+});
 export default logger;
