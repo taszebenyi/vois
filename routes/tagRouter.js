@@ -4,6 +4,19 @@ import logger from '../logger.js';
 
 const tagRouter = express.Router();
 
+/**
+ * @swagger
+ * /api/tags/{name}:
+ *   get:
+ *     summary: Retrieve posts by tag name
+ *     parameters:
+ *       - name: name
+ *         in: path
+ *         description: The name of the tag to filter posts by
+ *     responses:
+ *       '200':
+ *         description: A list of posts filtered by tag name
+ */
 tagRouter.get('/:name', async (req, res) => {
   try {
     const posts = await postService.getPostsByTag(req.params.name);

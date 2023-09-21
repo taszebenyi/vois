@@ -1,6 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { __dirname } from './dirnameUtil.js';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export const fetchPosts = async () => {
   const data = await fs.readFile(path.join(__dirname, '../data/posts.json'), 'utf-8');
