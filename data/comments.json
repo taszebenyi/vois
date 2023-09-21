@@ -2,39 +2,41 @@
   {
     "post_id": 1,
     "comments": [
-      { "id": 1, "text": "Great to see Joe back in action!", "author": "Mike" },
-      { "id": 2, "text": "Rally has missed him.", "author": "Sarah" },
-      { "id": 3, "text": "Is he competing next month?", "author": "Lucy" }
+      {
+        "id": 1,
+        "body": "Great to see Joe back in action!",
+        "author": "Mike",
+        "created_at": "2023-09-20"
+      },
+      { "id": 2, "body": "Rally has missed him.", "author": "Sarah", "created_at": "2023-09-20" },
+      { "id": 3, "body": "Is he competing next month?", "author": "Lucy", "created_at": "2023-09-21" }
     ]
   },
   {
     "post_id": 2,
-    "comments": [
-      { "id": 1, "text": "Strats are the best!", "author": "Dave" },
-      { "id": 2, "text": "What model is it?", "author": "Steve" }
-    ]
+    "comments": []
   },
   {
     "post_id": 3,
     "comments": [
-      { "id": 1, "text": "Wroom wroom! Nice ride!", "author": "Jen" },
-      { "id": 2, "text": "What's the make?", "author": "Tom" },
-      { "id": 3, "text": "Gas or electric?", "author": "Alan" }
+      { "id": 1, "body": "Wroom wroom! Nice ride!", "author": "Jen", "created_at": "2023-09-20" },
+      { "id": 2, "body": "What's the make?", "author": "Tom", "created_at": "2023-09-20" },
+      { "id": 3, "body": "Gas or electric?", "author": "Alan", "created_at": "2023-09-21" }
     ]
   },
   {
     "post_id": 4,
     "comments": [
-      { "id": 1, "text": "Dentists are always scary!", "author": "Karen" },
-      { "id": 2, "text": "Hope it went well.", "author": "Sam" }
+      { "id": 1, "body": "Dentists are always scary!", "author": "Karen", "created_at": "2023-09-20" },
+      { "id": 2, "body": "Hope it went well.", "author": "Sam", "created_at": "2023-09-21" }
     ]
   },
   {
     "post_id": 5,
     "comments": [
-      { "id": 1, "text": "Drums? Brave choice, parent!", "author": "Tina" },
-      { "id": 2, "text": "She'll love it!", "author": "Paul" },
-      { "id": 3, "text": "Time for earplugs?", "author": "Janet" }
+      { "id": 1, "body": "Drums? Brave choice, parent!", "author": "Tina", "created_at": "2023-09-20" },
+      { "id": 2, "body": "She'll love it!", "author": "Paul", "created_at": "2023-09-20" },
+      { "id": 3, "body": "Time for earplugs?", "author": "Janet", "created_at": "2023-09-21" }
     ]
   }
 ]

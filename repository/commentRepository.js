@@ -10,5 +10,7 @@ export const getComments = async () => {
 
 export const getCommentsByPostId = async (postId) => {
   const comments = await getComments();
-  return comments.find((commentObj) => commentObj.post_id === postId);
+
+  const result = comments.find((commentObj) => commentObj.post_id === postId);
+  return result.comments;
 };

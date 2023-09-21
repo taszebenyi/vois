@@ -65,8 +65,6 @@ postRouter.get('/:id', async (req, res) => {
  *     responses:
  *       '200':
  *         description: A list of comments for the post
- *       '404':
- *         description: No comments found for this post
  */
 postRouter.get('/:id/comments', async (req, res) => {
   try {
@@ -74,7 +72,7 @@ postRouter.get('/:id/comments', async (req, res) => {
     res.json({ data: postComments });
   } catch (error) {
     logger.error(error.message);
-    res.status(error.message === 'No comments found for this post' ? 404 : 500).json({ error: error.message });
+    res.status(500).json({ error: error.message });
   }
 });
 
