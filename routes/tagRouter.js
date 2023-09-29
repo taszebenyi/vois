@@ -24,7 +24,7 @@ tagRouter.get('/:name', async (req, res) => {
     res.json({ data: posts });
   } catch (error) {
     logger.error(error.message);
-    res.status(500).json({ error: error.message });
+    res.status(error.message === 'No posts found for this tag' ? 404 : 500).json({ error: error.message });
   }
 });
 
