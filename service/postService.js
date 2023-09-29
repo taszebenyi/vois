@@ -16,9 +16,9 @@ export const getPostById = async (id) => {
 
 export const getPostsByTag = async (tag) => {
   const allPosts = await postRepository.getPosts();
-  const filteredPosts = allPosts.filter((post) => post.tags.includes(tag));
+  const filteredPosts = allPosts?.filter((post) => post.tags.includes(tag));
 
-  if (filteredPosts.length === 0) {
+  if (!filteredPosts) {
     throw new Error('No posts found for this tag');
   }
 
