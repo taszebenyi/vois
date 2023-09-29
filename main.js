@@ -11,11 +11,9 @@ import swaggerOptions from './swaggerOptions.js';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import cors from 'cors';
+import { limiter } from './appConfig.js';
+import { corsOptions } from './appConfig.js';
 
-const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
-  optionsSuccessStatus: 204,
-};
 config();
 
 const app = express();
@@ -24,6 +22,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(cors(corsOptions));
 app.use(helmet());
+app.use(limiter);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use('/api/posts', postRouter);
