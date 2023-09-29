@@ -10,13 +10,19 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerOptions from './swaggerOptions.js';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
+import cors from 'cors';
 
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  optionsSuccessStatus: 204,
+};
 config();
 
 const app = express();
 const specs = swaggerJsDoc(swaggerOptions);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+app.use(cors(corsOptions));
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
